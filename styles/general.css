@@ -1,0 +1,288 @@
+/* -- Light and Dark Mode -- */
+body.light-mode {
+    --bg-color: #eae8ec;
+    --text-color: #000000;
+    --link-hover: #a98bc7;
+    --footer-bg: #ffffff;
+    --primary-purple: #a98bc7;
+    --light-gradient: #eae8ec;
+    --contact-btn-color: #a98bc7;
+    --footer-link-color: #000000;
+    --social-section-bg: #a98bc7;
+    --submit-btn-color: #a98bc7;
+    --toggle-btn-bg: #53338a;
+    --mobile-menu-bg: #a98bc7;
+    --progress-bar-fill: #a98bc7;
+    --bar-fill: #000000;
+    --card-bg: #a98bc7;
+    --card-border: #53338a;
+    --card-bg-back: #53338a;}
+    
+body.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #eae8ec;
+    --link-hover: #53338a;
+    --footer-bg: #0f0f0f;
+    --primary-purple: #53338a;
+    --light-gradient: #000000;
+    --contact-btn-color: #53338a;
+    --footer-link-color: #eae8ec;
+    --social-section-bg: #53338a;
+    --submit-btn-color: #53338a;
+    --toggle-btn-bg: #a98bc7;
+    --mobile-menu-bg: #53338a;
+    --progress-bar-fill: #53338a;
+    --bar-fill: #eae8ec;
+    --card-bg: #53338a;
+    --card-border: #a98bc7;
+    --card-bg-back: #a98bc7;}
+      
+/* Dark Mode Navbar Text */
+.dark-mode .navbar,
+.dark-mode .navbar a,
+.dark-mode .navbar #theme-toggle,
+.dark-mode .nav-logo {
+    color: white;}
+
+/* Light and Dark Mode Button Label*/
+body.light .button-label {
+    color: #222;}
+      
+/* Theme Toggle Text Button */
+#theme-toggle {
+  background-color: var(--toggle-btn-bg);
+  color: var(--text-color);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Gravitas One', serif;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+  background: none;
+  font-size: 20px;
+
+  transition: background-color 0.3s ease;}
+
+#theme-toggle:hover {
+    background-color: var(--link-hover);}
+  
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+  
+html {
+    height: 100%;
+    font-family: 'Gravitas One', serif;
+    cursor: url('images/sparkle.png') 16 16, auto;}
+    
+body {
+    height: 100%;
+    font-family: 'Gravitas One', serif;
+    cursor: url('images/sparkle.png') 16 16, auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);}
+
+/* Menu Icon */
+.menu-icon {
+    position: absolute;
+    top: 16px;
+    right: 30px;
+    font-size: 26px;
+    color: black;
+    cursor: pointer;}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 70px;
+    background: var(--bg-color);}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 60px; /* Add this line to shift nav links left */
+    margin-top: 5px;}
+
+.nav-links a:hover {
+    color: #a98bc7;}
+
+.nav-logo {
+    font-family: 'Gravitas One', serif;
+    font-size: 24px;
+    color: #222;}
+    
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;}
+
+/* Buttons */
+.buttons {
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 60px 20px;
+    font-family: 'Dancing Script', cursive;
+    position: relative;}
+
+.footer-links a {
+    font-family: 'Gravitas One', serif;
+    color: var(--footer-link-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;}
+
+.footer-nav a {
+    color: var(--footer-link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav a:hover {
+    color: var(--link-hover);
+  }
+  
+/* Side Menu for Mobile */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* move off-screen to the right */
+    width: 220px;
+    height: 100%;
+    background: var(--mobile-menu-bg);
+    opacity: 0.9;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 30px;
+    transition: right 0.3s ease;
+    z-index: 999;}
+
+/* Slide in When Open */
+.mobile-menu.open {
+    right: 0; /* slide in from the right */}
+
+/* Skip Links */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #38196f;
+    color: #eae8ec;
+    padding: 8px 16px;
+    z-index: 1000;
+    text-decoration: none;
+    transition: top 0.3s ease;
+    font-size: 16px;}
+
+.skip-link:focus {
+    top: 20px; /* Slide it into view on focus */}
+
+.portfolio-item h3 {
+    margin-top: 10px;
+    font-size: 18px;}
+      
+.footer-name {
+    font-family: 'Gravitas One', serif;
+    font-size: 26px;
+    margin-bottom: 10px;}
+      
+.footer-tagline {
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;}
+      
+.footer-credit {
+    font-size: 12px;
+    opacity: 0.8;}
+      
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gravitas One', serif;
+    transition: transform 0.3s ease;}
+      
+/* Footer */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;}
+
+.footer-links a:hover {
+    color: #a98bc7;}
+
+/* Mobile Menu */
+.dark-mode .menu-icon {
+    color: white;}
+
+.mobile-menu a:hover {
+    transform: translateX(5px);}
+
+/* Misc */
+a {
+    color: var(--text-color);}
+  
+  @keyframes shimmerMove {
+    0% {
+      background-position: 0 0;}
+    100% {
+      background-position: 100% 100%;}}
+  
+  .portfolio {
+    padding: 80px 40px;
+    background: #f4f4f4;
+    text-align: center;}
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;}
+    
+/* Scroll-to-Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    background-color: var(--primary-purple, #a98bc7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease;}
+      
+#scrollTopBtn:hover {
+    background-color: var(--link-hover, #53338a);}
+      

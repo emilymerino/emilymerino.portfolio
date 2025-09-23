@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Page Title</title>
+
+  <!-- Link your stylesheets -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/portfolio-page-styles.css" />
+
+  <link rel="stylesheet" href="styles/responsive.css">
+
+  <!-- Optional: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <!-- Mobile Side Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about-me-page.html">About Me</a>
+      <a href="portfolio-page.html">Portfolio</a>
+      <a href="contact-page.html">Contact</a>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">Portfolio</div>
+        <div class="nav-content">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-contact">Home</a></li>
+            <li><a href="about-me-page.html" class="nav-contact">About Me</a></li>
+            <li><a href="portfolio-page.html" class="nav-contact">Portfolio</a></li>
+            <li><a href="contact-page.html" class="nav-contact">Contact</a></li>
+            <li><button id="theme-toggle" class="theme-toggle-btn">Dark Mode</button></li>
+          </ul>
+          <div class="menu-icon hover-up" aria-label="Open mobile menu" role="button" tabindex="0">&#9776;</div>
+        </div>
+      </nav>
+    </header>
+    <!-- Scroll Top Button -->
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    <body>
+      <!-- Slideshow Title -->
+      <h2 class="slideshow-title">My Work</h2>
+
+      <!-- Slideshow Section -->
+      <section class="gallery-wrapper">
+        <button class="slider-arrow left-arrow" onclick="scrollSlider(-1)">❮</button>
+        <div class="gallery-track" id="galleryTrack">
+          <div class="gallery-item"><img src="images/knight-image.jpg" alt="Slide 1" /></div>
+          <div class="gallery-item"><img src="images/magazine-cover.png" alt="Slide 2" /></div>
+          <div class="gallery-item"><img src="images/product-photo.png" alt="Slide 4" /></div>
+          <div class="gallery-item"><img src="images/sus-girl-image.jpg" alt="Slide 5" /></div>
+        <button class="slider-arrow right-arrow" onclick="scrollSlider(1)">❯</button>
+        </div>
+      </section>
+      
+      
+      
+      
+    </body>
+
+  <footer class="footer hover-up">
+    <p class="footer-tagline">Student • Artist</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about-me-page.html">About Me</a>
+      <a href="portfolio-page.html">Portfolio</a>
+      <a href="contact-page.html">Contact</a>
+    </div>
+    <p class="footer-credit">© 2025 Emily Merino. All rights reserved.</p>
+</footer>
+<script src="scripts/scripts.js"></script>
+
+</body>
+</html>

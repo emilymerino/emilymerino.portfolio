@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me – Emily Merino</title>
+
+  <!-- Link your stylesheets -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/about-me-page-styles.css" />
+
+  <link rel="stylesheet" href="styles/responsive.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <header>
+        <!-- Mobile Side Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about-me-page.html">About Me</a>
+            <a href="portfolio-page.html">Portfolio</a>
+            <a href="contact-page.html">Contact</a>
+        </div>
+  
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-logo">Portfolio</div>
+            <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me-page.html">About Me</a></li>
+                <li><a href="portfolio-page.html">Portfolio</a></li>
+                <li><a href="contact-page.html">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle-btn">Dark Mode</button></li>
+            </ul>
+            <div class="menu-icon hover-up" aria-label="Open mobile menu" role="button" tabindex="0">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Scroll Top Button -->
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+    
+    <!-- About Section -->
+    <main class="about-container">
+    <div class="about-text">
+        <h1 class="about-title">So, who am I?</h1>
+        <p class="about-description">
+        I'm a student in the Interactive Multimedia & Design (IMD) program at Carleton University. I've had a passion for design since grade 9 and have been creating ever since. My journey began with simple layouts and has grown into a love for crafting meaningful, engaging digital experiences. Whether it's visual design, UI/UX, or front-end development, I’m always exploring new ways to bring ideas to life and tell stories through design.
+        </p>
+        <a href="contact-page.html" class="contact-button">Contact me</a>
+    </div>
+    <div class="about-image">
+        <img src="images/self-portrait.jpg" alt="Portrait of Emily Merino">
+    </div>
+
+    <!-- Horizontal Divider -->
+    <hr class="about-divider">
+
+    <div class="content-wrapper">
+    <!-- Skills Section -->
+    <div class="container">
+    <section class="skills-section">
+        <div class="skills-column">
+          <h2><span class="black">Soft</span> <span class="purple">Skills</span></h2>
+          <p>Good Communicator 70%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+          <p>Problem Solver 75%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+          <p>Team Work Skills 90%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+          <p>Time Management Skills 95%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 95%;"></div>
+          </div>
+          <p>Adaptability 90%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skills-column">
+          <h2><span class="black">Technical</span> <span class="purple">Skills</span></h2>
+          <p>Graphic Desgin 90%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+          <p>Programming 70%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+          <p>Social Media Management 80%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+          <p>Video Editing 80%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+          <p>Techinal Writing 70%</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Info Cards -->
+      <section class="info-cards">
+        <div class="card-container">
+          <div class="card-inner">
+            <div class="card-front">Volunteer</div>
+            <div class="card-back">Ottawa Food Bank, Skreamers Ottawa, Gift-Wrapping Place d'Orleans, and Photographer for OFSAA Wrestling Championships</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card-inner">
+            <div class="card-front">Education</div>
+            <div class="card-back">Carleton University as of September 2024, Algonquin College as of September 2024, and St. Peter Catholic High school June 2024</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card-inner">
+            <div class="card-front">Awards</div>
+            <div class="card-back">Bronze star course and Grade 9, 10, 11, 12 Honour Roll.</div>
+          </div>
+        </div>
+      </section>   
+    
+    <!-- Work Experience Section -->
+    <section class="work-experience">
+      <h2 class="section-heading">Work Experience</h2>
+    
+      <div class="experience-item">
+        <button class="exp-toggle">Sales Associate Supervisor <span>▼</span></button>
+        <div class="exp-content">
+          <p><strong>Party City</strong> | Sept 11, 2023 – Present</p>
+          <ul>
+            <li>Helped customers with purchases and questions</li>
+            <li>Organized and cleaned the front of store</li>
+            <li>Scheduled balloon orders for pick-up</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="experience-item">
+        <button class="exp-toggle">High School Co-op Student <span>▼</span></button>
+        <div class="exp-content">
+          <p><strong>Jessica Thomas Photography</strong> | Sept 5, 2023 – Jan 24, 2024</p>
+          <ul>
+            <li>Assisted boutique photographer with studio setup</li>
+            <li>Organized sets, created promotional reels</li>
+            <li>Edited and finalized customer photo albums</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="experience-item">
+        <button class="exp-toggle">Cheese Department CSR <span>▼</span></button>
+        <div class="exp-content">
+          <p><strong>Farm Boy</strong> | May 4, 2023 – Sept 16, 2023</p>
+          <ul>
+            <li>Prepared cheese products under health/time rules</li>
+            <li>Recommended products to customers</li>
+            <li>Closed end-of-day tasks independently</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+         
+    </main>
+
+  <!-- Footer -->
+  <footer class="footer hover-up">
+    <p class="footer-tagline">Student • Artist</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about-me-page.html">About Me</a>
+      <a href="portfolio-page.html">Portfolio</a>
+      <a href="contact-page.html">Contact</a>
+    </div>
+    <p class="footer-credit">© 2025 Emily Merino. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>

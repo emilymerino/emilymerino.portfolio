@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Page Title</title>
+
+  <!-- Link your stylesheets -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/contact-page-styles.css" />
+
+  <link rel="stylesheet" href="styles/responsive.css">
+
+  <!-- Optional: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <!-- Mobile Side Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about-me-page.html">About Me</a>
+      <a href="portfolio-page.html">Portfolio</a>
+      <a href="contact-page.html">Contact</a>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">Portfolio</div>
+        <div class="nav-content">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-contact">Home</a></li>
+            <li><a href="about-me-page.html" class="nav-contact">About Me</a></li>
+            <li><a href="portfolio-page.html" class="nav-contact">Portfolio</a></li>
+            <li><a href="contact-page.html" class="nav-contact">Contact</a></li>
+            <li><button id="theme-toggle" class="theme-toggle-btn">Dark Mode</button></li>
+          </ul>
+          <div class="menu-icon hover-up" aria-label="Open mobile menu" role="button" tabindex="0">&#9776;</div>
+        </div>
+      </nav>
+    </header>
+    <!-- Scroll Top Button -->
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+    
+    <body>
+      <main class="contact-main">
+        <section class="contact-container">
+          <!-- Left Side -->
+          <div class="contact-text">
+            <h1>Contact Me</h1>
+            <p>
+              Need to get in touch with me? Either fill out the form with your inquiry or find the appropriate email to contact below.
+            </p>
+          </div>
+      
+          <!-- Right Side - Contact Form -->
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First name*</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" />
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="message">What can we help you with?</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+      
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </section>
+        <!-- Social Media Section -->
+        <section class="social-section socials">
+          <h2>Follow Me</h2>
+          <div class="social-icons">
+            <a href="https://www.tiktok.com/@thors_adopted?_t=ZM-8vNWdMh3ty9&_r=1" target="_blank" aria-label="TikTok">
+              <img src="images/tiktok-logo-black.png" class="logo light-logo" alt="TikTok Black">
+              <img src="images/tiktok-logo.png" class="logo dark-logo" alt="TikTok White">
+            </a>
+            <a href="https://www.instagram.com/emily.merinooo?igsh=MTlrYmVuZDM4d3A3dw%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
+              <img src="images/instagram-logo-black.png" class="logo light-logo" alt="Instagram Black">
+              <img src="images/instagram-logo.png" class="logo dark-logo" alt="Instagram White">
+            </a>
+            <a href="https://www.facebook.com/share/1ACZdiRrQ7/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+              <img src="images/facebook-logo-black.png" class="logo light-logo" alt="Facebook Black">
+              <img src="images/facebook-logo.png" class="logo dark-logo" alt="Facebook White">
+            </a>
+            <a href="https://www.reddit.com/u/emily00130/s/FAxqtYiw1F" target="_blank" aria-label="Reddit">
+              <img src="images/reddit-logo-black.png" class="logo light-logo" alt="Reddit Black">
+              <img src="images/reddit-logo.png" class="logo dark-logo" alt="Reddit White">
+            </a>
+          </div>          
+        </section>        
+      </main>      
+    </body>
+    <footer class="footer hover-up">
+        <p class="footer-tagline">Student • Artist</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about-me-page.html">About Me</a>
+          <a href="portfolio-page.html">Portfolio</a>
+          <a href="contact-page.html">Contact</a>
+        </div>
+        <p class="footer-credit">© 2025 Emily Merino. All rights reserved.</p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>

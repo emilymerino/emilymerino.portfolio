@@ -1,0 +1,143 @@
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.05); /* dark semi-transparent bg */
+  backdrop-filter: blur(8px);
+  margin-bottom: 40px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;}
+
+.contact-main {
+    margin-top: 60px;
+    padding: 80px 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+  
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+    padding: 0 20px;}
+    
+.contact-text {
+    flex: 1;
+    min-width: 280px;}
+  
+.contact-text h1 {
+    font-size: 42px;
+    font-family: 'Gravitas One', serif;
+    margin-bottom: 20px;
+    color: var(--text-color);}
+  
+.contact-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-color);}
+  
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.05); /* dark semi-transparent bg */
+  backdrop-filter: blur(8px);
+  margin-bottom: 40px;}
+  
+/* Light and Dark Mode Styling */
+/* Hide both by default */
+.light-logo,
+.dark-logo {
+  display: none;}
+
+/* In dark mode, show white logos */
+body.dark-mode .dark-logo {
+  display: inline;}
+
+body.dark-mode .light-logo {
+  display: none;}
+
+/* In light mode, show black logos */
+body.light-mode .light-logo {
+  display: inline;}
+
+body.light-mode .dark-logo {
+  display: none;}
+
+/* Optional sizing */
+.logo {
+  width: 50px;
+  height: auto;
+  margin: 0 10px;}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;}
+  
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;}
+  
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;}
+  
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #eae8ec;
+  border-radius: 6px;
+  font-size: 16px;}
+  
+.submit-btn {
+  background-color: var(--submit-btn-color);
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Gravitas One', serif;
+ transition: background-color 0.3s ease;}
+  
+.submit-btn:hover {
+  background-color: #a98bc7;}
+  
+/* Social Media Section */
+.socials {
+  background-color: var(--social-section-bg);
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  max-width: 100%;
+  width: 100%;}
+  
+.socials h2 {
+  font-size: 32px;
+  font-family: 'Gravitas One', serif;
+  margin-bottom: 30px;
+  color: var(--heading-color);}
+  
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;}
+  
+.social-icons a img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;}
+  
+.social-icons a img:hover {
+  transform: scale(1.1);} 
+
+.social-section {
+  background-color: var(--social-section-bg);
+  padding: 60px 20px;
+  text-align: center;
+  transition: background-color;}
