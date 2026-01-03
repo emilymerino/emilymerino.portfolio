@@ -1,91 +1,50 @@
+/* Title */
 .slideshow-title {
   text-align: center;
   font-size: 2.5rem;
-  margin: 80px 0 20px; /* Increased top margin */
-  padding-top: 20px;   /* Additional space in case something is overlapping */
+  margin: 80px 0 20px;
+  padding-top: 20px;
   color: var(--text-color, #fff);
   font-family: 'Gravitas One', serif;
   z-index: 1;
   position: relative;
 }
 
-.gallery-wrapper {
-  display: flex;
-  gap: 5vw; /* Use relative gap for responsiveness */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  padding: 40px 5vw; /* Relative horizontal padding */
-  box-sizing: border-box;
+/* Wrapper to center content */
+.portfolio-wrapper {
+  width: min(1200px, 92%);
+  margin: 0 auto 4rem;
 }
 
-.gallery-track {
-  display: flex;
-  gap: 20px;
+/* Responsive grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  align-items: start; /* allows different image heights */
 }
 
-.gallery-track img {
+/* Individual portfolio item */
+.portfolio-item {
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.portfolio-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Images — FULL VIEW, NO CROPPING */
+.portfolio-item img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2)
-}
-
-.gallery-track {
-  display: flex;
-  gap: 30px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  padding: 40px 0;
-}
-
-.gallery-item {
-  scroll-snap-align: center;
-  flex-shrink: 0;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: blur(4px);
-  transform: scale(0.9);
-}
-
-.gallery-item.active {
-  transform: scale(1.1);
-  filter: blur(0);
-}
-
-.gallery-item img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.slider-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.slider-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.left-arrow {
-  left: 5vw;
-}
-
-.right-arrow {
-  right: 5vw;
+  height: auto;        /* ✅ allow natural height */
+  max-height: none;    /* ✅ no forced limits */
+  object-fit: contain; /* ✅ ensures entire image is visible */
+  display: block;
+  border-radius: 14px;
 }
