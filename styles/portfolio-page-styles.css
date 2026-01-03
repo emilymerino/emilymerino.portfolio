@@ -1,4 +1,6 @@
-/* Title */
+/* ================================
+   Section Titles
+================================ */
 .slideshow-title {
   text-align: center;
   font-size: 2.5rem;
@@ -9,6 +11,10 @@
   z-index: 1;
   position: relative;
 }
+
+/* ================================
+   PORTFOLIO (Artwork) SECTION
+================================ */
 
 /* Wrapper to center content */
 .portfolio-wrapper {
@@ -21,7 +27,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
-  align-items: start; /* allows different image heights */
+  align-items: start;
 }
 
 /* Individual portfolio item */
@@ -42,9 +48,67 @@
 /* Images — FULL VIEW, NO CROPPING */
 .portfolio-item img {
   width: 100%;
-  height: auto;        /* ✅ allow natural height */
-  max-height: none;    /* ✅ no forced limits */
-  object-fit: contain; /* ✅ ensures entire image is visible */
+  height: auto;
+  max-height: none;
+  object-fit: contain;
   display: block;
   border-radius: 14px;
+}
+
+/* ================================
+   GITHUB / MY WEBSITES SECTION
+   (Matches Portfolio Styles)
+================================ */
+
+/* Wrapper to center content */
+.github-wrapper {
+  width: min(1200px, 92%);
+  margin: 0 auto 4rem;
+}
+
+/* Responsive grid */
+.github-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Individual GitHub card */
+.github-card {
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.github-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Card text */
+.github-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text-color, #fff);
+}
+
+.github-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: var(--text-color, #fff);
+}
+
+/* GitHub link */
+.github-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--accent-color, #817d85);
+}
+
+.github-link:hover {
+  text-decoration: underline;
 }
